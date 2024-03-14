@@ -40,7 +40,6 @@ func requestDetails(r *http.Request, key string) (val string, err error) {
 
 func getAllocatedName(name string) *AllocatedName {
 	if v, ok := names[name]; ok {
-		fmt.Println(v)
 		return v
 	}
 	return nil
